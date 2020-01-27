@@ -9,13 +9,9 @@ class User
         $this->name = $name;
     }
 
-    public function hello()
-    {
-        print("Hello, " . $this->name);
-    }
 }
 
 $user = new User('php');
-$user->hello();
+print_r($user);
 
 ?>
