@@ -1,9 +1,21 @@
 <?php
-echo('Hello PHP!');
-echo('/aaa.php');
-$xx = array(
-  'aa' => '11',
-  'bb' => '22'
-);
-echo($xx);
+
+class User
+{
+    private $name;
+
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+
+    public function hello()
+    {
+        print("Hello, " . $this->name);
+    }
+}
+
+$user = new User('php');
+$user->hello();
+
 ?>
